@@ -86,7 +86,7 @@ const Search = () => {
       return `Found ${results.length} products`;
     }
     if (searched && results.length < 1) {
-      return `Search: No products found`;
+      return `Search: Producto no encontrado`;
     }
   };
 
@@ -143,7 +143,7 @@ const Search = () => {
           <TextField
             onChange={handleChange('search')}
             id='outlined-basic'
-            label={<span><SearchIcon/>Buscar por nombre</span>}
+            label={<span><SearchIcon/>Busqueda</span>}
             variant='outlined'
             className={classes.tField}
             autoComplete='off'

@@ -27,7 +27,7 @@ import StoreIcon from '@material-ui/icons/Store';
 
 const isActive = (history, path) => {
   if (history.location.pathname === path) {
-    return { color: '#ff9900', textDecoration: 'none' };
+    return { color: '#ffffff', textDecoration: 'none' };
   } else {
     return { color: '#ffffff', textDecoration: 'none' };
   }
@@ -138,7 +138,7 @@ const MaterialAppBar = ({ history }) => {
   );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
-  const renderMobileMenu = (
+    const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
@@ -148,7 +148,7 @@ const MaterialAppBar = ({ history }) => {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <div style={{ backgroundColor: '#404040' }}>
+      <div style={{ backgroundColor: '#FF6D41' }}>
         <MenuItem>
           <Link style={isActive(history, '/')} to='/'>
             <IconButton aria-label='Home' color='inherit'>
@@ -263,11 +263,13 @@ const MaterialAppBar = ({ history }) => {
               <StoreIcon />
             </IconButton>
           </a>
-          <a href='/' style={{ color: '#ffffff', textDecoration: 'none' }}>
-            <Typography className={classes.title} variant='h6' noWrap>
-              MOVIL CENTER
-            </Typography>
-          </a>
+          <a href='/' style={{ color: '#ffffff', textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+  <img src='logo192.png' alt='Logo Movilcenter' style={{ height: '55px', marginRight: '10px' }} />
+  <Typography className={classes.title} variant='h6' noWrap>
+    MOVILCENTER
+  </Typography>
+</a>
+
 
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>

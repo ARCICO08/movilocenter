@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from './Layout';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import Link from '@material-ui/core/Link';  
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import Card from './Card';
@@ -123,14 +123,14 @@ const Shop = () => {
 
   return (
     <Layout
-      title='Shop page'
-      description='Search and find books'
+      title='Productos MOVILCENTER'
+      description='Explora la amplia gama de productos en Movilcenter, desde los últimos modelos de teléfonos celulares hasta innovadores electrodomésticos y servicios tecnológicos. Descubre la comodidad de pagar con Sistecredito y disfruta de una experiencia de compra única.'
       className='container-fluid'
     >
       <Search />
       <div className='row'>
         <div className='col-md-3'>
-          <h4>Filtrar por categoria</h4>
+          <h4>Categorias</h4>
           <ul>
             <Checkbox
               categories={categories}
@@ -138,7 +138,7 @@ const Shop = () => {
             />
           </ul>
 
-          <h4>Filtrar por rango de Precios</h4>
+          <h4>Rangos de precios</h4>
           <div>
             <RadioBox
               prices={prices}

@@ -121,7 +121,7 @@ export default function Signin() {
             required
             fullWidth
             id='email'
-            label='Correo'
+            label='Correo electronico'
             name='email'
             autoComplete='email'
             onChange={handleChange('email')}

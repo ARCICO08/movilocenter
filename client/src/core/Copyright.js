@@ -9,9 +9,8 @@ export default function Copyright() {
       <Typography variant='body2' color='textSecondary' align='center'>
         {'Copyright © '}
         <Link color='inherit' href='#'>
-          Brayan Stiven Arciniegas Correa,
-          Jose Luis Hinestroza,
-          Cristian Cañon
+        Stiven Arciniegas
+
         </Link>{' '}
         {new Date().getFullYear()}
         {'.'}

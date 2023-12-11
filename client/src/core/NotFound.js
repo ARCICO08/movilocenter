@@ -8,7 +8,7 @@ const NotFound = () => {
   return (
     <Layout
       title='Error: 404'
-      description='Page Not Found'
+      description='Pagina no encontrada'
       className='container-fluid'
     >
       <Typography variant='h3' gutterBottom>

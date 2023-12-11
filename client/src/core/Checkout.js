@@ -57,7 +57,7 @@ const Checkout = ({ products, setRun = (f) => f, run = undefined }) => {
     ) : (
       <Link to='/signin'>
         <Button variant='contained' color='primary'>
-          Haz Login Para Pedir
+          Inicia sesion para Pedir
         </Button>
       </Link>
     );
@@ -148,7 +148,7 @@ const Checkout = ({ products, setRun = (f) => f, run = undefined }) => {
               onChange={handleAddress}
               className='form-control'
               value={data.address}
-              placeholder='Type your delivery address here...'
+              placeholder='Escriba aquí su dirección de entrega..'
             />
           </div>
 

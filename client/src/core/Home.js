@@ -38,15 +38,15 @@ const Home = () => {
 
   return (
     <Layout
-      title='Home page'
-      description='MERN E-commerce App'
+      title='Inicio'
+      description=''
       className='container-fluid'
     >
       <Search />
       <div className='row'>
         <div className='col-md-1'></div>
         <div className='col-md-10'>
-          <h2 className='mb-2'>Recién Llegados</h2>
+          <h2 className='mb-2'>Nuevos Productos</h2>
           <div className='row'>
             {productsByArrival.map((product, i) => (
               <div key={i} className='col-xl-4 col-lg-6 col-md-6 col-sm-12'>
