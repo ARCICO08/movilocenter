@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <Layout
       title='Inicio'
-      description=''
+      description='Encuentra todo lo que necesitas en movilcenter'
       className='container-fluid'
     >
       <Search />
@@ -65,6 +65,27 @@ const Home = () => {
           </div>
         </div>
         <div className='col-md-1'></div>
+      </div>
+
+      {/* Botón de WhatsApp */}
+      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <a
+          href='https://wa.me/+573118882004'  // NUMERO DE TELEFONO 
+          target='_blank'
+          rel='noopener noreferrer'
+          style={{
+            display: 'inline-block',
+            background: '#25d366',
+            color: '#fff',
+            padding: '10px 20px',
+            borderRadius: '5px',
+            textDecoration: 'none',
+            fontSize: '16px',
+            fontWeight: 'bold',
+          }}
+        >
+          ¡Chatea con nosotros en WhatsApp!
+        </a>
       </div>
 
       <Copyright />
